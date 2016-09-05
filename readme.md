@@ -637,7 +637,7 @@ public class ControllerTests : ControllerTestBase<Startup>
 Being good REST citizens, we should also make sure that we return the correct status code along with the content. Say now that we want to test that the service returns 204-NoContent if no customers are found for the given country. 
 We could do this by making sure that we have the appropriate  test data in the database or we could mock the **IQueryExecutor** and have it return an empty list without even touching the database.
 
-By extending the **HttpClient** we can really simplyfy the way to mock services used in the test.
+By extending the **HttpClient** we can really simplify the way to mock services used in the test.
 
 ```
 public class TestClient : HttpClient
